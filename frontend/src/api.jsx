@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://lead-management-system-kh2o.onrender.com",
+  baseURL: "https://lead-management-system-kh2o.onrender.com/api",
   withCredentials: true,
 });
 
