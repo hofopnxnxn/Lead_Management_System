@@ -42,7 +42,7 @@ async function seed() {
   }
 
   await Lead.insertMany(leads, { ordered: false });
-  console.log("✅ Inserted 100 demo leads");
+  console.log("Inserted 100 demo leads");
 
   process.exit(0);
 }
