@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const BASE_URL = import.meta.env.VITE_API_URL;
+
 const api = axios.create({
-  baseURL: "https://lead-management-system-kh2o.onrender.com/api",
+  baseURL: BASE_URL,
   withCredentials: true,
 });
 
